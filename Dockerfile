@@ -1,5 +1,5 @@
 FROM node
-WORKDIR app-home
+WORKDIR containershome
 COPY . . 
 RUN npm i
 CMD ["node","server.js"]
