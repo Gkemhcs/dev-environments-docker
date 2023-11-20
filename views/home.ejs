@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            animation: backgroundAnimation 10s infinite alternate;
+            overflow: hidden;
+        }
+
+        #containerInfo {
+            text-align: center;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #logo {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            animation: logoAnimation 5s infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(to right, #4facfe, #00f2fe);
+            }
+            50% {
+                background: linear-gradient(to right, #ff4e50, #f9d423);
+            }
+            100% {
+                background: linear-gradient(to right, #4facfe, #00f2fe);
+            }
+        }
+
+        @keyframes logoAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Docker Container Page</title>
+</head>
+<body>
+    <div id="containerInfo">
+        <h1>Hello, I am running in a Dev Container id <%= id %>!</h1>
+       
+    
+    </div>
+
+    
+</body>
+</html>
